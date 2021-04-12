@@ -7,8 +7,3 @@ parameters:
         database: 'mydatabase'
         username: 'root'
         password: 'pass123'
-
-services:
-  sqlalchemybundle.testing.DummyEngineFactory:
-    tags:
-      - 'sqlalchemybundle.engine_factory'

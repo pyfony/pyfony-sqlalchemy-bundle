@@ -37,3 +37,7 @@ services:
       - '@consolebundle.logger'
     tags:
       - 'console.command'
+
+  sqlalchemybundle.testing.DummyEngineFactory:
+    tags:
+      - 'sqlalchemybundle.engine_factory'
