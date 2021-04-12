@@ -8,6 +8,14 @@ class EntityList:
     def __getitem__(self, index):
         return self._entities[index]
 
+    def __iter__(self):
+        self.__iterator = iter(self._entities)
+
+        return self
+
+    def __next__(self):
+        return next(self.__iterator)
+
     def get_by_id(self, id):
         for entity in self._entities:
             if entity.id == id:
